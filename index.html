@@ -12,52 +12,41 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            <div class="container-fluid" bis_skin_checked="1">
-                <!-- TODO Create a simple logo as navbar brand -->
-                <a class="navbar-brand" href="index.html"><img class="nav-logo" src="assets/Itear.jpg"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
-                    aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse show" id="navbarBasic" bis_skin_checked="1">
-                    <!-- TODO Consider different pages -->
-                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/project.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <a href="index.html"><img class="nav-logo" src="assets/Itear.jpg"></a>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="pages/project.html">Projects</a>
+                </li>
+                <li>
+                    <a href="pages/contact.html">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section id="about">
+        <div id="about">
             <div class="profile">
-                <div class="mypic">
-                    <img src="assets/syahinbahar_foto.jpg" class="w-25" alt="Syahin Pic">
-                </div>
                 <div class="info">
-                    <h3>Muhammad Syahin bin Baharudin</h3>
-                    <p>Age</p>
+                    <h1>Hi, Syahin here~</h1>
+                    <h2>A web designer, programmer</h2>
+                    <div class="links">
+                        <button>Resume</button>
+                        <button>Latest Works</button>
+                    </div>
+                </div>
+                <div class="mypic">
+                    <img src="assets/syahinbahar_foto.jpg" alt="Syahin Pic">
                 </div>
             </div>
-        </section>
+        </div>
         <br>
-        <section id="work">
-            WORK PLACEHOLDER
-        </section>
-        <br>
-        <section id="contact">
-            CONTACT PLACEHOLDER
-        </section>
     </main>
+
     <footer>
         DISCLAIMER
     </footer>
