@@ -1,0 +1,28 @@
+/* css/admin.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-wrapper {
+    min-height: 100vh;
+}
+
+.sidebar-fixed {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #212529; /* Bootstrap dark theme */
+}
+
+.sidebar-fixed .nav-link {
+    color: #adb5bd;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.sidebar-fixed .nav-link:hover, .sidebar-fixed .nav-link.active {
+    color: #fff;
+    background-color: #343a40;
+}
