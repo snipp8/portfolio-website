@@ -10,7 +10,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css?v=1.0.2">
     <script>
-        (function() {
+        (function () {
             const savedTheme = localStorage.getItem('theme') || 'light';
             if (savedTheme === 'dark') {
                 document.documentElement.classList.add('dark-mode');
@@ -23,14 +23,17 @@
 <body>
     <header>
         <div class="logo-toggle-container">
-            <a href="index.html"><img class="nav-logo" src="assets/images/Itear.jpg"
-                    alt="Syahin Logo"></a>
+            <a href="index.html"><img class="nav-logo" src="assets/images/Itear.jpg" alt="Syahin Logo"></a>
             <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="4"></circle>
-                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    <path
+                        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+                    </path>
                 </svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                 </svg>
             </button>
@@ -51,13 +54,13 @@
         <div class="profile hero-split">
             <div class="info">
                 <h1>Hi, Syahin here~</h1>
-                <h2>A web designer, programmer</h2>
-                <p>Strive for the best and keep exploring..<br>
-                    or whatever poetic word for "always learn"
+                <h2>Software Engineering Graduate<br> Web Developer & UI/UX Enthusiast</h2>
+                <p>Strive for the best and keep exploring.<br>
+                    Or whatever poetic phrase means "I like learning new things."<br>
                 </p>
                 <div class="links">
                     <a href="assets/docs/resume.pdf" download class="btn btn-danger">Resume</a>
-                    <a href="project/index.html" class="btn btn-outline-accent">Latest Works</a>
+                    <a href="project/index.html" class="btn btn-outline-accent">See My Work</a>
                 </div>
             </div>
             <div class="mypic">
@@ -75,4 +78,5 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
