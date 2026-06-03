@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Syahin Bahar's portfolio — web designer and programmer.">
-    <title><?php echo htmlspecialchars($pageTitle); ?></title>
+    <title>Portfolio Syahin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo $basePath; ?>css/style.css?v=1.0.2">
+    <link rel="stylesheet" href="css/style.css?v=1.0.2">
     <script>
         (function() {
             const savedTheme = localStorage.getItem('theme') || 'light';
@@ -21,14 +21,9 @@
 </head>
 
 <body>
-<?php 
-    if (!isset($activePage)) {
-        $activePage = '';
-    }
-?>
     <header>
         <div class="logo-toggle-container">
-            <a href="<?php echo $basePath; ?>"><img class="nav-logo" src="<?php echo $basePath; ?>assets/images/Itear.jpg"
+            <a href="index.html"><img class="nav-logo" src="assets/images/Itear.jpg"
                     alt="Syahin Logo"></a>
             <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
                 <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -42,15 +37,42 @@
         </div>
         <nav>
             <ul>
-                <li class="<?php echo ($activePage == 'about') ? 'active' : ''; ?>">
-                    <a href="<?php echo $basePath; ?>">About</a>
+                <li class="active">
+                    <a href="index.html">About</a>
                 </li>
-                <li class="<?php echo ($activePage == 'projects') ? 'active' : ''; ?>">
-                    <a href="<?php echo $basePath; ?>project/">Projects</a>
-                </li>
-                <li class="<?php echo ($activePage == 'contact') ? 'active' : ''; ?>">
-                    <a href="<?php echo $basePath; ?>contact/">Contact</a>
+                <li class="">
+                    <a href="project/index.html">Projects</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="profile hero-split">
+            <div class="info">
+                <h1>Hi, Syahin here~</h1>
+                <h2>A web designer, programmer</h2>
+                <p>Strive for the best and keep exploring..<br>
+                    or whatever poetic word for "always learn"
+                </p>
+                <div class="links">
+                    <a href="assets/docs/resume.pdf" download class="btn btn-danger">Resume</a>
+                    <a href="project/index.html" class="btn btn-outline-accent">Latest Works</a>
+                </div>
+            </div>
+            <div class="mypic">
+                <img src="assets/images/syahinbahar_foto.jpg" alt="Syahin's profile photo">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Syahin Bahar. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js?v=1.0.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

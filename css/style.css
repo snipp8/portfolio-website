@@ -147,12 +147,13 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     color: var(--primary-text);
-    margin-left: 2em;
-    padding: 14px 16px;
+    padding: 10px 0;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -165,8 +166,8 @@ nav ul li a {
 nav ul li a::after {
     content: "";
     position: absolute;
-    left: 16px;
-    bottom: 8px;
+    left: 0;
+    bottom: 2px;
     width: 0;
     height: 2px;
     background: var(--accent);
@@ -178,56 +179,84 @@ nav ul li a:hover {
 }
 
 nav ul li a:hover::after {
-    width: calc(100% - 32px);
+    width: 100%;
 }
 
 nav ul li.active a {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--accent);
 }
 
 nav ul li.active a::after {
-    width: calc(100% - 32px);
+    width: 100%;
     background: var(--accent);
 }
 
 /* ===== Hero / Profile Section ===== */
-.profile {
+.profile.hero-split {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 6rem;
-    max-width: var(--max-width);
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
+    overflow: visible;
+    min-height: calc(100vh - 107px);
+}
+
+.info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 0.4rem;
+    line-height: 1.15;
 }
 
 .info h2 {
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--primary-text);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 1.25rem;
+}
+
+.info p {
     color: var(--secondary-text);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    max-width: 420px;
 }
 
 .links {
     display: flex;
-    gap: 2rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .links .btn {
-    width: 150px;
+    min-width: 130px;
+    padding: 0.6rem 1.5rem;
+}
+
+.mypic {
+    flex: 0 0 auto;
+    width: 350px;
 }
 
 .mypic img {
     width: 100%;
-    max-width: 450px;
-    border-radius: var(--radius-full);
+    height: 380px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border-radius: 16px;
 }
 
 /* ===== Project Page ===== */
@@ -341,14 +370,21 @@ footer {
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
     header {
-        padding: 15px 1rem;
+        padding: 15px 20px;
+        gap: 1.5rem;
+        flex-direction: column;
     }
 
-    .profile {
-        flex-direction: column-reverse;
-        text-align: center;
+    .logo-toggle-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .profile.hero-split {
+        flex-direction: column;
+        padding: 2.5rem 1.5rem;
         gap: 2rem;
-        padding: 2rem 1rem;
+        min-height: auto;
     }
 
     .info {
@@ -356,19 +392,38 @@ footer {
     }
 
     .info h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .info p {
+        max-width: none;
     }
 
     .links {
         justify-content: center;
     }
 
+    .mypic {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
     .mypic img {
-        max-width: 300px;
+        height: 320px;
+        border-radius: 14px;
     }
 }
 
 @media (max-width: 600px) {
+    nav ul li a {
+        font-size: 0.95rem;
+    }
+    
+    nav ul li.active a {
+        font-size: 1.05rem;
+    }
+
     .contact-form input,
     .contact-form textarea {
         font-size: 0.95rem;
