@@ -117,6 +117,7 @@ html:not(.dark-mode) .theme-toggle-btn .sun-icon {
     opacity: 0;
     transform: rotate(90deg) scale(0);
 }
+
 html:not(.dark-mode) .theme-toggle-btn .moon-icon {
     opacity: 1;
     transform: rotate(0) scale(1);
@@ -127,6 +128,7 @@ html.dark-mode .theme-toggle-btn .sun-icon {
     opacity: 1;
     transform: rotate(0) scale(1);
 }
+
 html.dark-mode .theme-toggle-btn .moon-icon {
     opacity: 0;
     transform: rotate(-90deg) scale(0);
@@ -279,6 +281,38 @@ nav ul li.active a::after {
     color: #A0A0A0 !important;
 }
 
+/* ===== Project Card Image Wrapper ===== */
+.project-card-img-wrapper {
+    height: 200px;
+    background-color: #bdbdbd;
+    /* Light mode background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-top-left-radius: var(--radius-sm);
+    /* Matches your card radius */
+    border-top-right-radius: var(--radius-sm);
+    transition: background-color 0.3s ease;
+}
+
+/* Dark mode colored background */
+.dark-mode .project-card-img-wrapper {
+    background-color: #2D2D2D;
+    /* Matches the dark-mode card bg */
+}
+
+.project-card-img {
+    width: 100%;
+    height: 100%;
+    /* Option A: 'contain' to show the full image without cropping (adds letterbox/pillarbox background) */
+    object-fit: contain;
+
+    /* Option B (Alternative): 'cover' to crop and fill the container fully (no background color visible) */
+    /* object-fit: cover; */
+}
+
+
 /* ===== Contact Form ===== */
 .contact-form {
     display: flex;
@@ -419,7 +453,7 @@ footer {
     nav ul li a {
         font-size: 0.95rem;
     }
-    
+
     nav ul li.active a {
         font-size: 1.05rem;
     }
