@@ -221,11 +221,10 @@ nav ul li.active a::after {
     font-family: Verdana, Geneva, Tahoma, serif;
     font-size: clamp(4.1rem, 4vw, 3.5rem);
     font-weight: 900;
-    margin-bottom: 0.4rem;
     line-height: 1.15;
     margin-bottom: 2rem;
     text-decoration: underline;
-    text-underline-offset: 17px;
+    text-underline-offset: 22px;
     text-decoration-thickness: 7px;
     text-decoration-color: var(--accent);
 }
