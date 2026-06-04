@@ -1,10 +1,10 @@
 /* ===== Custom Properties ===== */
 :root {
-    --bg-color: #F1F2F4;
-    --header-bg: rgba(241, 242, 244, 0.8);
-    --primary-text: #000000;
+    --bg-color: #eaeaea;
+    --header-bg: #f1f1f1;
+    --primary-text: #202020;
     --secondary-text: #555555;
-    --accent: #DC3545;
+    --accent: #e70923;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --header-padding: 10px clamp(1rem, 5vw, 300px);
     --max-width: 1100px;
@@ -16,7 +16,8 @@
 .dark-mode {
     --bg-color: #1E1E1E;
     --header-bg: rgba(30, 30, 30, 0.8);
-    --primary-text: #E7E7E7;
+    --primary-text: #e0e0e0;
+    --accent: #e70923d8;
     --secondary-text: #A0A0A0;
 }
 
@@ -449,6 +450,22 @@ footer {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 3rem 2rem;
+}
+
+.btn-fill {
+    display: inline-block;
+    color: #fff;
+    background: var(--accent);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    /* font-weight: 500; */
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-fill:hover {
+    background: var(--accent);
+    filter: brightness(0.8);
 }
 
 .btn-outline {
