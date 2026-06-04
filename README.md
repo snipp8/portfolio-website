@@ -1,56 +1,72 @@
 # Syahin Bahar — Portfolio
 
-A personal portfolio website built with HTML, CSS, PHP, and Bootstrap 5.
+A personal portfolio website showcasing web design and software engineering projects. Built as a fully responsive static website with HTML, CSS, JavaScript, and Bootstrap 5.
 
-## Project Structure
+## 🚀 Features
+- **Modern UI/UX**: Clean layout using a harmonious color palette, custom styling, and modern typography.
+- **Dark Mode**: Smooth transition between light and dark modes, remembering preference via `localStorage`.
+- **Responsive Layout**: Fluid experience optimized for all screen sizes (mobile, tablet, desktop).
+- **Interactive Case Studies**: Modals showing comprehensive project overviews, design decisions, and wireframe comparisons.
+- **GitHub Pages Ready**: Optimized URL structure and configurations for hassle-free static hosting.
 
-```
+---
+
+## 📂 Project Structure
+
+```text
 portfolio/
 ├── assets/
-│   ├── images/          # Profile photos, logos
-│   └── docs/            # Resume and downloadable documents
-├── includes/            # Shared PHP partials
-│   ├── header.php       # <!DOCTYPE>, <head>, <header>, and <nav>
-│   └── footer.php       # <footer>, Bootstrap JS, custom JS
-├── contact/
-│   ├── index.php        # Contact page with form
-│   └── contactform.php  # Form handler (sends email via PHP mail)
-├── project/
-│   └── index.php        # Projects showcase page
+│   ├── docs/            # PDF documents (e.g., SYAHIN-resume.pdf)
+│   └── images/          # Profile photos, icons, and project assets
 ├── css/
-│   └── style.css        # Custom styles (organized by section)
+│   └── style.css        # Main stylesheet (including theme variables & custom components)
 ├── js/
-│   └── script.js        # Navigation active-state logic
-├── index.php            # Homepage / About page
+│   └── script.js        # Core JavaScript (theme toggle, local storage state persistence)
+├── project/
+│   └── index.html       # Projects gallery & case studies
+├── index.html           # Home / About Me page
 ├── .gitignore
 └── README.md
 ```
 
-## Setup
+---
 
-This site requires a **PHP-capable web server** to run locally.
+## 🛠️ Local Development
 
-### Using XAMPP
-1. Copy this folder into `htdocs/portfolio/`
-2. Start Apache from the XAMPP control panel
-3. Open `http://localhost/portfolio/` in your browser
+Since the site uses directory-root navigation (`./` and `../`) to maintain clean URLs, it is recommended to run a simple local web server to preview changes.
 
-### Using PHP's built-in server
+### Option 1: Using Python (Recommended)
+Open your terminal in the project root directory and run:
 ```bash
-php -S localhost:8000
+python -m http.server 8000
 ```
-Then open `http://localhost:8000` in your browser.
+Then visit: `http://localhost:8000`
 
-## Pages
+### Option 2: Using Node.js (npx)
+If you have Node.js installed, run:
+```bash
+npx serve
+```
+Then visit the local server address shown in your terminal (usually `http://localhost:3000`).
 
-| Page | Path | Description |
-|------|------|-------------|
-| About / Home | `/` | Introduction and profile section |
-| Projects | `/project/` | Showcase of work and projects |
-| Contact | `/contact/` | Contact form (sends email via PHP `mail()`) |
+---
 
-## Tech Stack
-- HTML5 & CSS3
-- PHP 8+
-- Bootstrap 5.3
-- Vanilla JavaScript
+## 🌐 Deployment to GitHub Pages
+
+1. Push your latest code to your repository:
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+2. Navigate to your repository page on GitHub.
+3. Click **Settings** (top menu) -> **Pages** (left sidebar).
+4. Under **Build and deployment**, select **Deploy from a branch** and set the branch to `main` (`/ (root)`).
+5. Click **Save**.
+
+---
+
+## 🧰 Tech Stack
+- **HTML5 & CSS3** (Custom design tokens, variables, & transitions)
+- **Bootstrap 5.3** (Grid layout, utilities, and components like Modals)
+- **Vanilla JavaScript** (Theme toggle logic and local storage)
