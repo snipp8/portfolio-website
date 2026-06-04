@@ -58,15 +58,15 @@
                 <!-- Project 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <!-- Placeholder Image (Replace src with your project image URL) -->
-                        <div
-                            style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: #6c757d; font-weight: 500;">Project Image 1</span>
+                        <!-- Project Image Wrapper -->
+                        <div class="project-card-img-wrapper">
+                            <img src="../assets/images/projects/p1-login.png" class="project-card-img" alt="Project 1">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Project Title 1</h5>
-                            <p class="card-text text-muted">This is a short description of the project. You can edit
-                                this text manually in the HTML file.</p>
+                            <h5 class="card-title">Modern Register and Login Page</h5>
+                            <p class="card-text text-muted">Designed a modern login and registration experience to
+                                create a clean and intuitive onboarding
+                                flow.</p>
                         </div>
                         <div class="card-footer bg-white border-top-0 pb-3">
                             <button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal"
@@ -97,26 +97,80 @@
             </div>
         </div>
 
-        <!-- Modal Template for Project 1 -->
+        <!-- ======== OVERLAY CASE STUDY ======== -->
+        <!-- Project 1 -->
         <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
             aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header border-bottom-0 pb-0">
-                        <h2 class="modal-title h4 fw-bold" id="projectModal1Label">Project Title 1 - Case Study</h2>
+                        <h2 class="modal-title h4 fw-bold" id="projectModal1Label">Modern Register and Login Page - Case
+                            Study</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body pt-4">
-                        <div
-                            style="height: 300px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 1.5rem;">
-                            <span style="color: #6c757d; font-weight: 500;">Detailed Project Header Image</span>
+                        <div class="project-detail-img-wrapper">
+                            <img src="../assets/images/projects/p1-detail.png" class="project-detail-img"
+                                alt="Modern Register and Login Page Case Study Detail">
                         </div>
 
-                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Project Overview</h4>
-                        <p class="mb-4">Describe the big picture of the project here. What was the goal, what problem
-                            were you solving, and what was your role in the process?</p>
 
-                        <div class="row mb-4">
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Project Overview</h4>
+                        <p class="mb-4">Designed a modern login and registration experience for a fictional mobile
+                            application. The goal was to create a clean and intuitive onboarding flow that reduces
+                            friction for first-time users.</p>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Objective</h4>
+                        <p class="mb-4">The project focused on creating a visually appealing authentication experience
+                            while maintaining clarity and ease of use.</p>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Design Considerations</h4>
+                        <ul>
+                            <li>Simplicity: Users should immediately understand how to log in or create an account.</li>
+                            <li>Visual Clarity: Maintain a clean and modern aesthetic that reduces cognitive load.</li>
+                            <li>Mobile-first Design: The layout was optimized for mobile devices.</li>
+                            <li>Clear Call-to-Action: Prominent and easily identifiable buttons for login and
+                                registration.</li>
+                            <li>Accessibility: Input fields and buttons were designed with sufficient size and
+                                contrast.</li>
+                        </ul>
+
+                        <!-- Wireframe with image -->
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Wireframe</h4>
+                        <div class="project-wireframe-wrapper">
+                            <img src="../assets/images/projects/p1-wireframe.png" class="project-wireframe-img"
+                                alt="Register and Login Wireframe / Screenshot">
+                        </div>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Design Decisions</h4>
+                        <ol>
+                            <li>Large Primary CTA
+                                <ul style="list-style-type: none;">
+                                    <li>Decision: Use prominent Sign up and Login button</li>
+                                    <li>Reason: Directs user attention to the primary action.</li>
+                                </ul>
+                            </li>
+                            <li>Alternative sign up/sign in options
+                                <ul style="list-style-type: none;">
+                                    <li>Decision: Offer Google and Apple sign in options.</li>
+                                    <li>Reason: Allow users to sign in with their existing accounts.</li>
+                                </ul>
+                            </li>
+                            <li>Loading screen
+                                <ul style="list-style-type: none;">
+                                    <li>Decision: Implement skeleton loading</li>
+                                    <li>Reason: Let user know that the page is loading properly.</li>
+                                </ul>
+                            </li>
+                            <li>Consistent Colors
+                                <ul style="list-style-type: none;">
+                                    <li>Decision: Consistent use of colors throughout the page.</li>
+                                    <li>Reason: To create a cohesive and professional look and feel.</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <!-- <div class="row mb-4">
                             <div class="col-md-6">
                                 <h4 class="h5 fw-bold mb-2" style="color: var(--accent);">Target Users</h4>
                                 <ul class="text-muted">
@@ -131,17 +185,23 @@
                                     <li>What friction existed in their flow?</li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">The Solution & Process</h4>
-                        <p>Explain how you arrived at the final design or code implementation. Mention any wireframing,
-                            testing, or iteration that took place.</p>
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Final Screen</h4>
+                        <div class="project-wireframe-wrapper">
+                            <img src="../assets/images/projects/p1-final.png" class="project-wireframe-img"
+                                alt="Register and Login Final / Screenshot">
+                        </div>
+                        <p>This project helped me practice visual hierarchy, spacing, form design, and authentication
+                            flows. I learned how small UI decisions can significantly impact usability and user
+                            confidence.</p>
 
                     </div>
                     <div class="modal-footer border-top-0 pt-0">
                         <!-- If you have a live link, keep this. Otherwise you can remove it. -->
-                        <a href="#" class="btn btn-outline-accent" target="_blank" rel="noopener noreferrer">Visit Live
-                            Site</a>
+                        <a href="https://www.figma.com/design/Yu3IhaWvwM85xZ5oQgwwB8/LikedStuff?node-id=0-1&t=cBYqLpecdcPNIfRd-1"
+                            class="btn btn-outline-accent" target="_blank" rel="noopener noreferrer">Visit Design
+                            Project</a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Case
                             Study</button>
                     </div>
@@ -149,6 +209,7 @@
             </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label"
             aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">

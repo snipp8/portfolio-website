@@ -299,11 +299,69 @@ nav ul li.active a::after {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 10px;
     border-top-left-radius: var(--radius-sm);
     /* Matches your card radius */
     border-top-right-radius: var(--radius-sm);
     transition: background-color 0.3s ease;
 }
+
+/* ===== Project Detail Image Wrapper ===== */
+.project-detail-img-wrapper {
+    height: 300px;
+    background-color: #bdbdbd;
+    /* Matches the project-card-img-wrapper background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* ===== Project Wireframe Image Wrapper ===== */
+.project-wireframe-wrapper {
+    height: 200px;
+    background-color: #bdbdbd;
+    /* Matches the project-card-img-wrapper background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark mode colored background */
+.dark-mode .project-detail-img-wrapper {
+    background-color: #2D2D2D;
+    /* Matches the dark-mode card background */
+}
+
+.project-detail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Scale image down to fit without cropping */
+}
+
+/* Dark mode colored background */
+.dark-mode .project-wireframe-wrapper {
+    background-color: #2D2D2D;
+    /* Matches the dark-mode card background */
+}
+
+.project-wireframe-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Scale image down to fit without cropping */
+}
+
 
 /* Dark mode colored background */
 .dark-mode .project-card-img-wrapper {
@@ -401,7 +459,7 @@ footer {
     padding: 0.5rem 1.5rem;
     border-radius: var(--radius-sm);
     text-decoration: none;
-    font-weight: 500;
+    /* font-weight: 500; */
     transition: background 0.2s ease, color 0.2s ease;
 }
 
