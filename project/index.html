@@ -75,11 +75,33 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <!-- Project Image Wrapper -->
+                        <div class="project-card-img-wrapper">
+                            <img src="../assets/images/projects/p2/p2-cover.png" class="project-card-img"
+                                alt="Project 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">QR Code Generator</h5>
+                            <p class="card-text text-muted">A simple QR Code Generator that allows users to easily
+                                create custom QR codes. Well... that's it. How else can I sell this?</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-3">
+                            <button type="button" class="btn btn-outline-accent btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#projectModal2">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <!-- ======== OVERLAY CASE STUDY ======== -->
-        <!-- Project 1 -->
+
+        <!-- Project 1 Overlay-->
         <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
             aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -183,6 +205,93 @@
                         <a href="https://www.figma.com/design/Yu3IhaWvwM85xZ5oQgwwB8/LikedStuff?node-id=0-1&t=cBYqLpecdcPNIfRd-1"
                             class="btn btn-outline-accent" target="_blank" rel="noopener noreferrer">Visit Design
                             Project</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Case
+                            Study</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 Overlay-->
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0 pb-0">
+                        <h2 class="modal-title h4 fw-bold" id="projectModal2Label">QR Code Generator - Case
+                            Study</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-4">
+                        <div class="project-detail-img-wrapper">
+                            <img src="../assets/images/projects/p2/p2-detail.png" class="project-detail-img"
+                                alt="QR Code Generator Case Study Detail">
+                        </div>
+
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Project Overview</h4>
+                        <p class="mb-4">Developed a web-based QR Code Generator that allows users to quickly generate
+                            and customize QR codes. The project aimed to provide an intuitive interface while offering
+                            useful design customization options like color selection and transparent backgrounds.</p>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Objective</h4>
+                        <p class="mb-4">The objective was to build a functional and aesthetic tool that goes beyond
+                            basic QR generation by giving users control over the visual output.</p>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Design & Technical Considerations</h4>
+                        <ul>
+                            <li>Ease of Use: A straightforward form to input data and generate the QR code instantly.
+                            </li>
+                            <li>Customization: Adding radio buttons to toggle between a transparent background and
+                                custom colors.</li>
+                            <li>Real-time Preview: The generated QR code updates dynamically based on user input and
+                                selected design options.</li>
+                            <li>Responsive UI: Ensuring the generator works seamlessly across different screen sizes.
+                            </li>
+                        </ul>
+
+                        <!-- Wireframe with image -->
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Interface Design</h4>
+                        <div class="project-wireframe-wrapper">
+                            <img src="../assets/images/projects/p2/p2-interface.png" class="project-wireframe-img"
+                                alt="QR Code Generator Interface / Screenshot">
+                        </div>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Key Features Developed</h4>
+                        <ol>
+                            <li>Dynamic QR Generation
+                                <ul style="list-style-type: none;">
+                                    <li>Detail: Utilized JavaScript to encode text/URLs into QR format instantly.</li>
+                                </ul>
+                            </li>
+                            <li>Design Customization Options
+                                <ul style="list-style-type: none;">
+                                    <li>Detail: Implemented UI toggles for background transparency and a color picker
+                                        for the QR code elements.</li>
+                                </ul>
+                            </li>
+                            <li>Download Functionality
+                                <ul style="list-style-type: none;">
+                                    <li>Detail: Added a clear CTA allowing users to download their generated, customized
+                                        QR codes as image files.</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <h4 class="h5 fw-bold mb-3" style="color: var(--accent);">Final Screen</h4>
+                        <div class="project-wireframe-wrapper">
+                            <img src="../assets/images/projects/p2/p2-final.png" class="project-wireframe-img"
+                                alt="QR Code Generator Final / Screenshot">
+                        </div>
+                        <p>This project was an excellent exercise in combining functional JavaScript logic with an
+                            interactive, user-friendly frontend. It highlighted the importance of providing
+                            customization options without overwhelming the user.</p>
+
+                    </div>
+                    <div class="modal-footer border-top-0 pt-0">
+                        <!-- Update link as necessary -->
+                        <a href="#" class="btn btn-outline-accent" target="_blank" rel="noopener noreferrer">Visit Live
+                            Site</a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Case
                             Study</button>
                     </div>
