@@ -2,7 +2,7 @@
 
 A personal portfolio website showcasing web design and software engineering projects. Built as a fully responsive static website with HTML, CSS, JavaScript, and Bootstrap 5.
 
-## 🚀 Features
+## Features
 - **Modern UI/UX**: Clean layout using a harmonious color palette, custom styling, and modern typography.
 - **Dark Mode**: Smooth transition between light and dark modes, remembering preference via `localStorage`.
 - **Responsive Layout**: Fluid experience optimized for all screen sizes (mobile, tablet, desktop).
@@ -11,7 +11,7 @@ A personal portfolio website showcasing web design and software engineering proj
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 portfolio/
@@ -29,7 +29,7 @@ portfolio/
 └── README.md
 ```
 
-## 🧰 Tech Stack
+## Tech Stack
 - **HTML5 & CSS3** (Custom design tokens, variables, & transitions)
 - **Bootstrap 5.3** (Grid layout, utilities, and components like Modals)
 - **Vanilla JavaScript** (Theme toggle logic and local storage)
