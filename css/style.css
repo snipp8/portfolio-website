@@ -1,4 +1,4 @@
-/* ===== Custom Properties ===== */
+/* CSS variables */
 :root {
     --bg-color: #eaeaea;
     --header-bg: #f1f1f1;
@@ -21,7 +21,7 @@
     --secondary-text: #A0A0A0;
 }
 
-/* ===== Reset & Base ===== */
+/* Reset & Base */
 *,
 *::before,
 *::after {
@@ -47,11 +47,10 @@ body {
 main {
     flex: 1;
     display: flex;
-    /* Helps the hero-split fill its height */
 }
 
 
-/* ===== Header & Navigation ===== */
+/*Header and Nav*/
 header {
     display: flex;
     justify-content: space-between;
@@ -121,7 +120,7 @@ header {
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
 
-/* Light mode: Moon visible, Sun hidden and rotated */
+/*Light mode: Moon visible, Sun hidden and rotated*/
 html:not(.dark-mode) .theme-toggle-btn .sun-icon {
     opacity: 0;
     transform: rotate(90deg) scale(0);
@@ -132,7 +131,7 @@ html:not(.dark-mode) .theme-toggle-btn .moon-icon {
     transform: rotate(0) scale(1);
 }
 
-/* Dark mode: Sun visible, Moon hidden and rotated */
+/*Dark mode: Sun visible, Moon hidden and rotated*/
 html.dark-mode .theme-toggle-btn .sun-icon {
     opacity: 1;
     transform: rotate(0) scale(1);
@@ -204,7 +203,7 @@ nav ul li.active a::after {
     background: var(--accent);
 }
 
-/* ===== Hero / Profile Section ===== */
+/*Hero/Profile Section*/
 .profile.hero-split {
     display: flex;
     align-items: center;
@@ -302,7 +301,7 @@ nav ul li.active a::after {
     rotate: 7deg;
 }
 
-/* ===== Project Page ===== */
+/* Project Page */
 .card {
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -322,7 +321,7 @@ nav ul li.active a::after {
     color: #A0A0A0 !important;
 }
 
-/* ===== Project Card Image Wrapper ===== */
+/* Project Card Image Wrapper */
 .project-card-img-wrapper {
     height: 200px;
     background-color: #bdbdbd;
@@ -333,12 +332,11 @@ nav ul li.active a::after {
     overflow: hidden;
     padding: 10px;
     border-top-left-radius: var(--radius-sm);
-    /* Matches your card radius */
     border-top-right-radius: var(--radius-sm);
     transition: background-color 0.3s ease;
 }
 
-/* ===== Project Detail Image Wrapper ===== */
+/* Project Detail Image Wrapper */
 .project-detail-img-wrapper {
     height: 300px;
     background-color: #bdbdbd;
@@ -353,11 +351,10 @@ nav ul li.active a::after {
     transition: background-color 0.3s ease;
 }
 
-/* ===== Project Wireframe Image Wrapper ===== */
+/*Project Wireframe Image Wrapper*/
 .project-wireframe-wrapper {
     height: 200px;
     background-color: #bdbdbd;
-    /* Matches the project-card-img-wrapper background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,34 +368,29 @@ nav ul li.active a::after {
 /* Dark mode colored background */
 .dark-mode .project-detail-img-wrapper {
     background-color: #2D2D2D;
-    /* Matches the dark-mode card background */
 }
 
 .project-detail-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Scale image down to fit without cropping */
 }
 
 /* Dark mode colored background */
 .dark-mode .project-wireframe-wrapper {
     background-color: #2D2D2D;
-    /* Matches the dark-mode card background */
 }
 
 .project-wireframe-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Scale image down to fit without cropping */
 }
 
 
 /* Dark mode colored background */
 .dark-mode .project-card-img-wrapper {
     background-color: #2D2D2D;
-    /* Matches the dark-mode card bg */
 }
 
 .project-card-img {
@@ -407,12 +399,11 @@ nav ul li.active a::after {
     /* Option A: 'contain' to show the full image without cropping (adds letterbox/pillarbox background) */
     object-fit: contain;
 
-    /* Option B (Alternative): 'cover' to crop and fill the container fully (no background color visible) */
+    /* Option B: 'cover' to crop and fill the container fully (no background color visible) */
     /* object-fit: cover; */
 }
 
-
-/* ===== Contact Form ===== */
+/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -469,14 +460,14 @@ nav ul li.active a::after {
     filter: brightness(0.9);
 }
 
-/* ===== Footer ===== */
+/* Footer */
 footer {
     padding: 2rem;
     text-align: center;
     margin-top: auto;
 }
 
-/* ===== Utilities ===== */
+/* Utilities */
 .page-section {
     max-width: var(--max-width);
     margin: 0 auto;
