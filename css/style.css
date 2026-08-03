@@ -1,3 +1,6 @@
+@import url('https://googleapis.com');
+
+
 /* CSS variables */
 :root {
     --bg-color: #eaeaea;
@@ -611,4 +614,59 @@ footer {
     .mypic img {
         height: 200px;
     }
+}
+
+/* Center the sticky note on the screen for presentation */
+
+/* The Sticky Note Component */
+.sticky-note {
+    /* Absolute Positioning to float on top of the image */
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    z-index: 10;
+
+    /* Box Sizing & Dimensions */
+    width: 250px;
+    min-height: 250px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    /* Paper Effect: Soft yellow gradient & realistic shadow */
+    background: linear-gradient(135deg, #ffff88 0%, #ffffc0 100%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15),
+        inset 0 0 20px rgba(0, 0, 0, 0.05);
+
+    /* Rotation to mimic a natural handwritten note placement */
+    transform: rotate(-3deg) translateY(-50%);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect: Straightens and lifts up slightly */
+.sticky-note:hover {
+    transform: rotate(0deg) scale(1.03) translateY(-50%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography Styles */
+.sticky-title {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+}
+
+.sticky-content {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    color: #444;
+    margin: 0;
+    word-wrap: break-word;
 }
